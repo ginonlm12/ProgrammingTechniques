@@ -15,11 +15,12 @@ double cube(double x){
 }
 /***************************************************/
 int main() {
-    int n;
-    double f;
-    scanf("%d %lf", &n, &f);
+    int n; // Khai báo biến n kiểu int 
+    double f; // Khai báo biến f kiểu double
+    scanf("%d %lf", &n, &f);  // Nhập giá trị cho biến kiểu int và double từ bàn phím
     
-    printf("Int: %d\n", cube(n));
+    printf("Int: %d\n", cube(n)); // In kết quả lập phương của biến kiểu int
+    // In kết quả lập phương của biến kiểu double, làm tròn hai chữ số sau dấu phẩy
     printf("Double: %.2lf\n", cube(f));
     
     return 0;

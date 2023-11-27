@@ -47,14 +47,15 @@ void FREE_MEMORY(int **A, int n){
     delete[] A; // Giải phóng bộ nhớ cho mảng con trỏ
 }
 int main(){
-    printf("Bai 1.10_LamNH_0517\n");
     int n, **A, **B;
-    scanf("%d",&n);
+    printf("Bai1.10_LamNH_0517 \ninput = \n");
+    scanf("%d", &n);
     ALLOCATE_MEMORY(&A, n); // Cấp phát bộ nhớ cho ma trận A
     INPUT(A, n); // Nhập giá trị cho ma trận A
     ALLOCATE_MEMORY(&B, n); // Cấp phát bộ nhớ cho ma trận B
     INPUT(B, n); // Nhập giá trị cho ma trận B
 
+    printf("output = \n");
     SUM(A, B, n); // Thực hiện phép cộng và in ra kết quả
     PRODUCT(A, B, n); // Thực hiện phép nhân và in ra kết quả
 

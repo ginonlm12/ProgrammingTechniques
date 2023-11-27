@@ -4,6 +4,7 @@
 using namespace std;
 int main(){
     int n; // Lưu trữ kích thước của mảng
+    cout << "Bai1.09_LamNH_0517" << endl << "input = ";
     cin >> n; // Nhập kích thước mảng
 
     int* A = new int[n]; // Cấp phát bộ nhớ động mảng A có kích thước n
@@ -12,6 +13,7 @@ int main(){
         cin >> A[i]; // Nhập giá trị cho từng phần tử của mảng
     }
 
+    cout << "output = ";
     // Duyệt qua tất cả các dãy con của mảng A
     for(int i = 0; i < n; i++){
         for(int j = i; j < n; j++){

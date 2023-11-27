@@ -17,6 +17,7 @@ void input(int **mt, int m, int n){
     printf("Enter all elements of the matrix: \n");
     for(int i = 0; i<m; i++){
         for(int j = 0; j<n; j++){
+            printf("m[%d][%d] = ", i, j);
             scanf("%d", &mt[i][j]); // Nhập giá trị cho từng phần tử của ma trận
         }
     }
